@@ -11,11 +11,11 @@ body{
 display: flex;
 justify-content: center;
 }
-h2{
+h1 h2 {
     color: #fff;
 
 }
-btn{
+.btn{
 position: relative;
 text-transform: uppercase;
 width: 120px;
