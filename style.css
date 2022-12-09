@@ -17,7 +17,6 @@ h1 h2 {
 }
 .btn{
 position: relative;
-text-transform: uppercase;
 width: 120px;
 font-weight: bold;
 height: 55px;
