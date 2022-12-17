@@ -109,8 +109,10 @@ input[id^="spoiler"]{
 
     summary{
       display: flex;
+      flex-direction: column;
       width: 145px;
-      margin-right: 0px;
+      /* margin-left: 175px; */
+      margin-bottom: 50px;
       background-color:aqua;
       border-radius: 12px;
     }

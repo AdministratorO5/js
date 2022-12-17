@@ -330,5 +330,648 @@
 // let obj = {x: 1, y: 2, z: 3};
 // console.log(obj.length);  //вообше безпонятия где ошибка ???
 
+//----- Запросы 
+
+// ---if else----
+// let t=1;
+// if(t>10){
+//     console.log('++++');
+// }else{
+//     console.log('----')
+// }
+// let t=1;
+// if(10>t){
+//     console.log('++++');
+// }else{
+//     console.log('----')
+// }
+// let t=10;
+// if(10<=t){
+//     console.log('++++');
+// }else{
+//     console.log('----')
+// }
+//---равество---
+// let t=10;
+// if(t==10){console.log('+++');
+// }else{console.log('---')}
+//----неравенство----
+// let t =2;
+// if(t!=10){
+//     console.log('+++');
+// }else{
+//     console.log('---')
+// }
+// let t=1;
+// let r=2;
+// if(t>r){
+//     console.log('t');
+// }else{
+//     console.log("r")
+// }
+// let t=2;
+// let r=4;
+// if(t==r){
+//     console.log('+++');
+// }else{
+//     console.log("---")
+// }
+//----Равенство строк----
+// let t='abcd';
+// let r='abcdi';
+// if(t==r){
+//     console.log('+++')
+// }else{
+//     console.log("---")
+// }
+//---Равенство строк и чисел--
+// let t='123';
+// let r=123;
+// if(t==r){
+//     console.log('+++')
+// }else{
+//     console.log('---')
+// }
+//---- равенства по значению и типу ----
+// let test1 = '3';
+// let test2 = '3';
+// if (test1 !== test2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test1 = 3;
+// let test2 = '3';		
+// if (test1 !== test2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+//----Логическое И 
+// let n =4;
+// if(n=>0 && n<=5){
+//     console.log('++++')
+// }else{
+//     console.log('----')
+// }
+// let n=12;
+// if(n=>10 && n<=20){
+//     console.log('++++')
+// }else{
+//     console.log('-----')
+// }
+// let n1=1;
+// let n2=1;
+// if(n1 <= 1 && n2 >= 3){
+//     console.log('+++')
+// }else{
+//     console.log('---')
+// }
+// ----Логическое ИЛИ 
+// let num = 1;
+// if (num == 0 || num == 1) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let num = 2;
+// if (num == 0 || num == 1 || num 
+// 	== 2) { 
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+//----Приоритете логческих операторов--
+// let n=3;
+// if(n>0 && n <5 || n>10 && n<20){
+//     console.log('++++')
+// }else{
+//     console.log('---')
+// }      // ---выполнится ++ приоритет И-&& больше чем ИЛИ-||
+// let num = 1 ;
+// if (num == 0 || num > 1 && num 
+// 	< 5 ) { 
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let num1 = 3;
+// let num2 = 5;
+// if ( num1 > 0 && (num2 == 3 || num2 
+// 	== 5) ) { 
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let num = 3;
+// if (num > 5 || num > 0 && num < 3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let num = 9;
+// if (num == 9 || num > 10 && num 
+// 	< 20 || num > 20 && num < 30) { 
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+//---- Инвертация кода---
+// let num1=2;
+// let num2=0;
+// if (!(num1 >= 0 && num2 <= 10)) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+//--- Условия с булевыми значениями--
+// let t =true;
+// if(t==true){
+//     console.log('+++')
+// }else{
+//     console.log('---')
+// }
+// let test = 1;	
+// if (test == false) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test = '';
+// if (test == false) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test;		
+// if (test == true) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test = 3 * 'a';	
+// if (test == true) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+//----Сокрашеннная формула проверки --
+// let test =true;
+// if(test){
+//     console.log('+++');
+// }else(
+//     console.log('---')
+// )
+//---Сокрашение на  ложь----
+// let test = true;
+// if(!test){
+//     console.log('+++')
+// }else{
+//     console.log('----')
+// }
+// let test = true;
+// if(!test){
+//     console.log('+++')
+// }else{
+//     console.log('----')
+// }
+// let test = true;
+// if(!test){
+//     console.log('+++')
+// }else{
+//     console.log('----')
+// }
+// let test =true;
+// if(!!test){       //// Тут короче надо было поставить два !!
+//     console.log('+++')
+// }else{
+//     console.log('---')
+// }
+//---Обшая сокрашенная форма проверки--
+// let test = 'abc';
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test = '';
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test = 3 * 'abc';
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test;
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test = -1;
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+//---Сложные условия сокрашения---
+// let test1 = false;
+// let test2 = true;
+// if (test1 && test2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test1=true;
+// let test2=true;
+// if(test1 && test2){
+//     console.log('+++')
+// }else{
+//     console.log("---")
+// }
+// let test1 =true;
+// let test2 =true;
+// if(test1 && (!test2)){
+//     console.log('+++')
+// }else{
+//     console.log('-----')
+// }
+// let test1 = true;
+// let test2 = true;
+// if (test1 === true && test2 !== 
+// 	true) { 
+// 	console.log('+++');
+// } else {
+// 	console.log('---'); /// сократить мне увы не удалось
+// }
+// let test1 = true;
+// let test2 = true;
+// if (!(test1 && test2)) { 
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test1 = true;
+// let test2 = true;
+// if (test1 &&(!!test2)) { 
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test1 = true;
+// let test2 = true;
+// let test3 = true;
+// if (test1 && test2 &&test3) { 
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test1 = true;
+// let test2 = true;
+// let test3 = true;
+// if (test1 &&(test2 && test3)) { 
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+//----необезательная кострукция---
+//  let test =10;
+//  if(test ==10){
+//     console.log('yes')
+//  }
+// if (test > 0) 
+// 	console.log('+++');
+// else 
+// 	console.log('---');
+//---- else if ее значени и свойства---
+// let num = -15;
+// if (num <=10) {
+// 	console.log('value1');
+// } else if (num <=20) {
+// 	console.log('value2');
+// } else if (num <=30) {
+// 	console.log('value3');
+// } else {
+// 	console.log('неверное значение переменной num');
+// }
+// let num = -15;
+// if (num >=1) {
+// 	console.log('value1');
+// } else if ( num <=31 &&num >=1){
+//     console.log('value4');
+// } else {
+// 	console.log('неверное значение переменной num');
+// }
+// let num = 3;
+// if (num >= 0) {
+// 	if (num <= 5) {
+// 		console.log('меньше или равно 5');
+// 	} else {
+// 		console.log('больше 5');
+// 	}
+// } else {
+// 	console.log('меньше нуля');
+// }
+
+//----Пусть в переменной num хранится число. Если это число попадает в диапазон от 10 до 99, то найдите сумму цифр этого числа. Если полученная сумма меньше или равна 9, то выведите сообщение о том, что сумма цифр однозначна, в противном случае выведите сообщение о том, что сумма цифр двухзначна.
+// let num = 12;
+// if (num > 10 && num < 99 ) {
+// 	console.log( num);
+// } else if ( num <=9 ){
+//     console.log('Цумма однозначна ');
+// } else {
+// 	console.log('неверное значение переменной num');
+// }
+//---- switch case -------
+// let num = 1;
+// switch (num) {
+// 	case 1:
+// 		console.log('value1');
+// 	break;
+// 	case 2:
+// 		console.log('value2');
+// 	break;
+// 	case 3:
+// 		console.log('value3');
+// 	break;
+// 	default:
+// 		console.log('incorrect value');
+// 	break;
+// }
+// --- конструкция switch-case -----
+// let lang = 'de';
+// switch (lang){
+//     case 'ru':
+// 	console.log('рус');
+// break ; 
+//     case 'en':
+// 	console.log('анг');
+// break ;
+//     case 'de':
+// 	console.log('нем');
+// break;
+// default: 
+// 	console.log('язык не поддерживается');
+// }
+//----Задачи ----
+// let num = 1;
+// let res;
+// switch (num) {
+// 	case 1:
+// 	case 2:
+// 		res = 'a';
+// 	break;
+// 	case 3:
+// 		res = 'b';
+// 	break;
+// }
+// console.log(res);
+// let num = 1;
+// let res;
+// if (num == 1 || num == 2) {
+// 	res = 'a';
+// }
+// if (num == 3) {
+// 	res = 'b';
+// }
+// console.log(res);
+//---- Тернарный оператор ---
+// let age = 17;
+// let adult = age >= 18 ? true: false;
+// console.log(adult);
+//----------
+// let age = 17;
+// let adult;
+// if (age >= 18) {
+// 	adult = true;
+// } else {
+// 	adult = false;
+// }
+// console.log(adult);
+//-----Задачи-----
+// let num = 1;   .// ---Сокрашенный вид
+// let res = num >=0 ? '1' :
+// '2';
+// console.log(res)
+
+// let num = 1;
+// let res;    // ---Не сокрашеный вид
+// if (num >= 0) {
+// 	res = '1';
+// } else {
+// 	res = '2';
+// }
+// console.log(res);
+//--------------------------
+// let a = 2 * (3 - 1);
+// let b = 6 - 2;
+// console.log(b==a)
+//---
+// let a = 5 * (7 - 4);
+// let b = 1 + 2 + 7;
+// console.log(a>b)
+//----
+// let a = 2 ** 4;
+// let b = 4 ** 2;
+// console.log(a!=b)
+//----Окошка с запросами confirm----
+// let ok = confirm('Вам есть 18 ?');
+// if (ok) {
+// 	console.log('Ты уже не ребенок ');
+// } else {
+// 	console.log('ты еше ребенок ');
+// }
+// let age =17;
+// let adult;
+// if(age>=18){
+//     adult = true;
+// }else{
+//     adult= false;
+// }
+// console.log(adult)
+// let age=18;
+// let adult;
+// if(age >=18){
+//     adult=true;
+// }else{
+//     adult=false;
+// }
+// console.log(adult)
+// let age=23;
+// let res;
+// if(age>=18){
+//     if(age<=23){
+//         res='от 18 до 23'
+//     }else{
+//         res='больше 23'
+//     }
+// }else{
+//     res='Меньше 18'
+// }
+// console.log(res)
+// let age =23;
+// let res;
+// if (age >=18){
+    
+//     if(age<=23){
+//         res=' От 18 до 23 '
+//     }else{
+//         res= 'Больше 23'
+//     }
+// }else{
+//     res='Меньше 18'
+// }
+// console.log(res)
+
+// let min = 60;
+// if (min >= 0 && min <= 14) {
+// 	console.log('1 четверть');
+// }
+
+// if (min >= 15 && min <= 29) {
+// 	console.log('2 четверть');
+// }
+
+// if (min >= 30 && min <= 44) {
+// 	console.log('3 четверть');
+// }
+
+// if (min >= 45 && min <= 60) {
+// 	console.log('4 четверть');
+// }
+// let arr = [1, 2, 3];
+// if( arr.length>=3){
+//     console.log('больше ил равно трем')
+// }else {
+//     console.log('меньше трех ')
+// }
+// let arr = ['a','b','c','d']
+// if (arr[0] == 'a' ){
+//     console.log('начинается на А')
+// }else {
+//     console.log('не начинается на А')
+// }
+// let arr =['a','b','c','d','z']
+// let last =arr[arr.length -1]
+// if(last =='x' || last == 'z') {
+//     console.log('Это Х или Z')
+// }else{
+//     console.log("Это не Х")
+// }
+// let num =13;
+// let last =String(num)[1];
+// if(last == 2 || last ==4 ||last==6 && last !=3 ){
+//     console.log('Четное ')
+// }else{
+//     console.log('Нечетное')
+// }
+
+// let a =prompt('Сколько вам лет ?')
+// let b = 18;
+// let rest = a % b;
+// if (rest === 0) {
+// 	console.log('Четное число');
+// } else {
+// 	console.log('Не четное число '); 
+// }
+// let num1 = '1';
+// let num2 = '2';
+// if (Number(num1)+ num2 === 3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let str = "123";
+// alert(typeof str); // string
+// let num = Number(str); // становится числом 123
+// alert(typeof num); // number
+// let num =123;
+// let last =String(num)[0];
+// if(last == 1){
+//     console.log('Четное ')
+// }else{
+//     console.log('Нечетное')
+// }
+// let num = 123;
+// let first = String(num)[0];
+// if (first == 1) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let num = 12;
+// let str = Number(num);
+// if (str.length == 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let num = 12;
+// if (String(num).length === 2) {  //--выводит +++ 
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let first = 123033;   //--- не решен поностью---
+// let num =String(first)[0]; 
+// let sum1 = num[0] + num[1] + 
+// 	num[2]; 
+// let sum2 = num[3] + num[4] + 
+// 	num[5]; 
+// if (sum1 == sum2) {
+// 	console.log('суммы равны');
+// } else {
+// 	console.log('суммы не равны');
+// }
+
+// let min = 1;
+// if (min >= 1 && min <=3) {
+// 	console.log('Весна');
+// }
+// if (min >= 4 && min <= 6) {
+// 	console.log('Лето');
+// }
+
+// if (min >= 7 && min <= 9) {
+// 	console.log('Осень');
+// }
+
+// if (min >= 10 && min <= 12) {
+// 	console.log('Зима');
+// }
+// let num='dbcd'
+// let dom =String(num)[0]     //----- работает первый символ и тп 
+// if (dom=='a'){
+//     console.log('равно А')
+// }else{
+//     console.log('Не А')
+// }
+// let arr = ['a','b','c','d']
+// if (arr[0] == 'a' ){
+//     console.log('начинается на А')
+// }else {
+//     console.log('не начинается на А')
+// }
+//---------------------------------------------
+// let num =44;
+// let last =String(num)[0];
+// if(last == 1 || last ==2 ||last==3){
+//     console.log('Да ')
+// }else{
+//     console.log('Нет ')
+// }
+
+//----- Циклы----------
+
+
+
+
+
+
+
 
 
