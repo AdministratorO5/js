@@ -967,6 +967,566 @@
 
 //----- Циклы----------
 
+// for( let i =100; i>0;i++){
+//     console.log(i)
+// }
+// for( let i =100; i>0;i++){
+//     if ( i%3==0){
+//         alert(i);
+//     }
+// }
+//----Перебор массива  в цикле -------
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// for(let i of arr){
+//     console.log(i)
+// }
+//-----Перебор элементов обьекта----
+// let obj = {x: 1, y: 2, z: 3};
+// for (let key in obj){
+//     console.log(key) //--Выводит только ключи обьекта--
+// }
+// let obj = {x: 1, y: 2, z: 3};
+// for (let key in obj){
+//     console.log(obj[key]) //--Выводит все обьекты--
+// }
+//----while---------------
+// let num = 50;
+// while (num = 1000) {
+// 	num = num * 2;
+// }
+// console.log(num)
+// console.log(num)
+// let i = 13;
+// while (i <= 33) {
+// 	console.log(i);
+// 	i++;
+// }
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// for (let i = 4; i < arr.length; i--) { 
+// 	console.log(arr[i]);
+// }
+// let arr = ['a', 'b', 'c', 'd', 'e'];	
+// for (let i = 0; i <= arr.length; 
+// 	i++) { 
+// 	console.log(arr[i]);
+// 	}
+// let arr=[1,2,3,4,5,6,7];
+// for (let elem of arr){
+//     if ( elem % 2 !=0 ){
+//         console.log(elem)
+//     }
+// }
+// let res =0 ;
+// for(let i =1;i <=100;i++){
+//     if(i %2===0){
+//     res+=i;
+// }
+// }
+// console.log(res)
+// let res =0 ;
+// for(let i =1;i <99;i++){
+//     if(i %2!=0){
+//     res+=i;
+// }
+// }
+// console.log(res)
+// let arr=[2,5,9,3,1,4];
+// let res =0;
+// for (let elem of arr){
+//     res+=elem;
+// }
+// console.log(res)
+// let arr=[2, 5, 9, 3, 1, 4];
+// let res =0;
+// for (let elem of arr){
+//     if( elem %2===0){
+//     res+=elem;   
+//     }
+// }
+// console.log(res)
+// let arr=[2, 5, 9, 3, 1, 4];
+// let res =0;
+// for (let i =0; i ,arr.length;i++){
+//     res+=arr[i] * arr[i]; 
+//     console.log(res)
+// }
+// let str ='-';
+// for(let i =9;i>=1;i--){
+//     str+=i
+// }
+// console.log(str)
+//-----Перебор чисел циклом-----
+// for( let i =1;i<=1000;i++){
+//     let str = String(i);
+//     if ( str[0] ==='5'&&str[1]==='5'){
+//         console.log(i)
+//     }
+// }
+//----Break-------
+// let arr =[1,2,4,5,0,9,8];
+// for ( let elem of arr){
+//     if ( elem ==0 ){
+//         console.log(elem+'  есть')
+//         break; 
+//     }
+// }
+// let arr=[1,2,3,3,4,5,-6,6];
+// let res=0;
+// for (let i =1; i<=arr.length;i++ ){
+//     res+=arr[i]*arr[i];
+
+//         console.log(res+'  элемент с отрицательным значением')
+//         break;
+// let res =0;
+// let arr=[1,2,3,3,4,5,-6,6];
+// let res=0;
+//  for( let i =1;i<=1000;i++){
+//         let str = String(i);
+//         if ( str[0] && str[1]){
+          
+//             console.log(i)
+//         }
+//     }
+    
+// let arr = [3,22,5,6];
+// function arraySum(array){
+// let sum = 0;
+// for(var i = 0; i < array.length; i++){
+//     sum += array[i];
+//     }
+// console.log(sum);
+// }
+// arraySum(arr);
+//---Инструкция continued---
+// let arr=[1,2,3,4,5,6,7,8,9];
+// for (let elem of arr ){
+//     let result ;
+//     if (elem % 2 ===0){
+//         result =elem*elem;
+//     } else if ( elem % 3 === 0){
+//         result=elem*elem*elem;
+//     }else {
+//         continue;
+//     }
+//      console.log(result);
+// }
+// for ( let i =1;i <=9;i++){
+//     for (let j =1;j<=3;j++)
+//     document.write(i)
+// }
+// let arr = [];
+// for(let i=1; i<=3; i++){
+//   for(let j=1; j<=3; j++){
+//     arr.push(String(i)+String(j));
+//   }
+// }
+// console.log(arr)
+//--- перебор Элементов через цикл----
+// let arr = [1, 2, 3, 4, 5];
+// for (let i = 0; i < arr.length; 
+// 	i++) { 
+// 	arr[i] = arr[i] ** 10;
+// }
+// console.log(arr);
+// let arr = [5, 2, 3, 4, 5];
+// for (let i = 0; i < arr.length; 
+// 	i++) { 
+// 	arr[i]--;
+// }
+// console.log(arr);
+// let arr = [1,2,3,4,5];
+// for ( let i = 0 ;i < arr.length;i++){
+//   arr [i] +=10;
+// }console.log( arr )
+//----Заполнение обьектов чеорез цикл
+// let keys = ['a', 'b', 'c', 'd', 'e',];
+// let values = [1, 2, 3, 4, 5,6];
+// let obj = {};
+// for (let i = 0; i <= 5; i++) {   // короче тут мы добавили цифру 6 не имеюшую свой индекс тобиш абвг и вместе индекса будет андифандед
+// 	let key = keys[i];
+// 	let value = values[i];
+// 	obj[key] = value;
+// }
+// console.log(obj);
+// let obj = {};
+// for (let i = 0; i <= 4; i++) {
+// 	obj[keys[i]] = values[i];
+// }
+// console.log(obj);
+// let keys = ['пн', 'вт', 'ср', 'чт', 
+// 	'пт', 'сб', 'вс']; 
+// let values = [1, 2, 3, 4, 5, 6, 7];
+// let obj = {};
+// for (let i = 0; i <= 6; i++) {   
+// 	let key = keys[i];
+// 	let value = values[i];
+// 	obj[key] = value;
+// }
+// console.log(obj)
+// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};   //корочу тут надо только четь кчисла вывести
+// for ( let i = 0;i <= 4; i++){
+// if (i %2===0 ){
+//   console.log(i)
+// } 
+// }
+// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+// let arr = {};
+// for ( let i =0 ;i <= 4 ;i++){
+//   arr [key]= value ;
+// }console.log( arr )
+// let keys = ['a', 'b', 'c', 'd', 'e'];
+// let values = [1, 2, 3, 4, 5];
+// let obj = {};
+// for (let i = 0; i <= 4; i++) {
+// 	obj[keys[i]] = values[i];
+// }
+// console.log(obj);
+// for(let i=1; i<100; i++) {
+// 	let ok = true;
+// 	for(let  j=1; j<=10; j++) {
+// 	if(i%j==0) { ok = false; 
+// 	break; 
+// 	}
+// 	}if(!ok) continue;
+// 	console.log(i);
+// 	break;
+// 	}
+// let n = 12
+// for (let i = 7; i <= n; i++) { 
+// if (i % i === 0 || i % 1 ==0)
+// alert( i );
+// }
+//-----Работа с флагами -----
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let flag = false;
+// for ( let elem of arr ){
+// 	if ( elem =='c' ){
+// 		flag = true;
+// 		break;
+// 	}
+// }if ( flag === true){
+// 	console.log('+++')
+// }else{
+// 	console.log('---')
+// }
+// var arrayForF = [];
+// ---- Короче это код нихуя не пашет ------
+//     for(let i = 1; i < 10000000 ;i++){
+//       let f1 = i / 1;
+//       let f2 = i / 2;
+//       let f3 = i / 3;
+//       let f4 = i / 4;
+//       let f5 = i / 5;
+//       let f6 = i / 6;
+//       let f7 = i / 7;
+//       let f8 = i / 8;
+//       let f9 = i / 9;
+//       let f10 = i / 10;
+//       let f11 = i / 11;
+//       let f12 = i / 12;
+//       let f13 = i / 13;
+//       let f14 = i / 14;
+//       let f15 = i / 15;
+//       let f16 = i / 16;
+//       let f17 = i / 17;
+//       let f18 = i / 18;
+// 	  let f19 = i / 19;
+// 	  let f20 = i / 20;
+//       if(f1%1 && f2%1 && f3%1 && f4%1 && f5%1 && f6%1 && f7%1 && f8%1 && f9%1 && f10%1 && f11%1 && f12%1 && f13%1 && f14%1 && f15%1 && f16%1 && f17%1 && f18%1 && f19%1 && f20%1 ){
+//         arrayForF.push(i);
+//       }
+//     }
+//         document.write(arrayForF);
+
+//---------- Этот код выводит простые чисда которые делятся на себя и единицу ---- 2520 выводит----------
+// for(let i=1; i<100000; i++) {
+// let ok = true;
+// for(let j=1; j<=10; j++) {
+// 	if(i%j>0) { ok = false; break; }
+// 	}
+// 	if(!ok) continue;
+// 	console.log(i);
+// 	break;
+// }
+// function isPrimeNum(num){
+//     for (var i = 2; i < num; i++) {
+//         if (num%i==0){
+//             return false;
+//         }
+//     };
+//     return true;
+// }
+//-----Этот цикл прооверяет и выводит натуральные числа -----------
+
+// const n = 100; 
+// for (let i = 2; i <= n; i++) { 
+//   for (let j = 2; j <= i; j++) { 
+//     if (i % j === 0 && j < i) { 
+//       break; 
+//     } else if (j === i) { 
+//       console.log(i); 
+//     } 
+//   } 
+// }
+
+// ------Подсчет элементов внутри массива---
+// let arr =['a','b','c','d','a','d','a'];
+// let count= 0;
+// for ( let elem of arr ){
+// 	if ( elem == 'a'){
+// 	count++;
+// }
+// }
+// console.log( count )
+//-------- это пока что не до конца решенная задача -------
+
+// let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+// let counter =0;
+// let count=0 ;
+// for ( let elem of arr){    //------подсчеть элементов в массиве 
+
+//   if ( elem == 2){
+//     counter++;
+//   }else if ( elem ==3){
+//     count++;
+//   }
+// }
+// console.log( counter , count );
+// let arr = ['a', 'b', 'c', 'a', 
+// 	'a', 'b']; 
+// let count = {a: 0, b: 0, c: 0};
+// for ( let elem of arr){
+//   count[elem]++;
+// }
+// console.log( count);
+//-----Немного другая вариация --
+// let arr = ['a', 'b', 'c','c', 'a', 'a', 'b']; 
+// let count = {};
+// for ( let elem of arr){
+//   if ( count [elem] === undefined){
+//     count [elem]=1;
+//   }else{
+//     count [elem]++;
+//   }
+// }
+// console.log( count);
+//----получение предыдушего эл массива---
+// let arr =[1,2,3,4,5];
+// for (let i = 1; i < arr.length;i++) {    //-- тут мы пулучаем два эл массива 
+// 	console.log(arr[i - 2]);
+// }
+// let arr =[1,2,3,4,5];
+// for (let i = 1; i < arr.length;i++) { 
+// 	console.log(arr[i - 1]+ arr[i]);
+// }
+// let arr = [10, 20, 30, 40, 21, 32, 51];
+// for (let i =0; i<arr.Length;i++){
+//   b = String( arr [i]);
+//   if (b[0]==1||b[0]==2){
+//     console.log( arr[i])
+//   }
+// }
+// let arr = ['21', '32', '34', '43', 
+// 	'45', '54', '55']; 
+// let sum = 0;
+
+// for (let elem of arr) {
+// 	if (+elem[0] === +elem[1] + 1) {
+// 		sum += +elem; // исправляем
+// 	}
+// }
+// console.log(sum)
+//-----ошибки в коде---
+// for (let i = 10; i> 0; i--) {
+// 	console.log(i);
+// }
+// while (i < 10) {
+//     i++;
+//       console.log(i);
+//   }
+// let res=0;
+// for (let i = 1; i <= 10; i++) {
+// 	res += i;
+// }
+// console.log(res);
+// let arr = ['1', '2', '3', '4', '5' ];
+// let sum = 0; 
+// for (let elem of arr) {
+// 	sum += +elem;
+// }
+// console.log(sum)
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let i = 0; i <= arr.length; i++) { 
+//   console.log( '!')
+// 	sum += +i;
+// }
+// console.log(sum);
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+// for (let i = 0; i < arr.length ; i++) { 
+//   console.log('!!!')
+// 	sum += +arr[i];
+// }
+// console.log(sum)
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; 
+// 	i++) { 
+// 	sum += +arr[i];
+// }
+// console.log(sum)
+// let arr = [1, 2, 3, 4, 5];
+// let elen=0;
+
+// for (let elem of arr) {
+//   console.log( '!!!')
+// 	elen = elem ** 2;
+// }
+// console.log(elen);
+//----заполняет массив чмслами от1 до 5
+// for (let i = 1; i <= 5; i++) {
+// 	arr.push();
+// }
+// console.log(arr);
+//-----флаги тру фолс
+// let arr = [1, 2, 6, 4, 5];
+// let res = false;
+// for (let elem of arr) {
+// 	if (elem == 3) {
+// 		res = true;
+// 		break;
+//   }
+// }
+// console.log(res);
+//---- раздел обьектов только четные
+// let arr = [1, 2, 3, 4, 5, 6];
+// for (let elem of arr) {
+// 	if (elem % 2 == 0) {
+// 		console.log(elem);
+// 	}
+// }
+// ---- Работа с массивами----
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]; 
+// let res=[ ] ;
+// for (let elem of arr) {
+// 	if (elem % 2 != 0) {   //тут мы находим нечетные от старого массива
+// 		res.push(elem);   // тут мы с пущ кидаем нечет элементы в новый массив
+// 	}
+// }
+// console.log(res);
+// for ( let i =100; i >=1;i--){
+//     console.log(i)   // обратный цикл от 100 до 1--
+//   }
+//--- заполнение пустого массива циклои
+// let arr = []
+// for (let i = 0; i < 10; i++) {
+//   arr.push(i)   
+// }console.log( arr)
+// ------ работа с помошью функции -------
+// const arr = [20, 40, 77, 53];
+// const sum = 0;
+// function count() {
+// for (i = 0; i < arr.length; i++) {
+// sum += arr[i];
+// }
+// return sum;   
+// }
+// console.log(count())
+//--- нашли среднее арифмитическое массива----
+// const arr = [1, 3, 5, 7, 9, 11];
+// const getAverage = (numbers) => {
+//   let sum = 0; // объявляем переменную, в которой будет храниться сумма всех чисел массива
+//   for (let i = 0; i < numbers.length; i += 1) { // инициализируем цикл
+//     sum += numbers[i]; // на каждой итерации прибавляем к сумме значение текущего элемента массива
+//   }
+//   return sum / numbers.length; // возвращаем среднее арифметическое
+// };
+// console.log(getAverage(arr)); // => 6
+//---- выйдут лиш те числа которые начинаются на 1-2-5-------
+// let arr = [10, 20, 30, 50, 235, 3000];
+// let res
+// for (let elem of arr) {
+//   let el = String(elem)
+// 	if (el[0] ==='1' || el[0] === '2' || el[0]==='5')
+//     console.log(el)
+// 	}
+// let arr = [1, 2, 3, 4, 5,4,3,424,23,42];
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i]);
+// }
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [6, 7, 8, 9, 10];
+// let obj={};
+// for (let i = 0; i <= 6; i++) {   
+// 	let key = arr1[i];
+// 	let value = arr2[i];
+// 	obj[key] = value;
+// }
+// console.log(obj)
+//---увеличение зарплаты на 10%--------
+// let obj = {	employee1: 100,	employee2: 200,	employee3: 300,	employee4: 400,	employee5: 500,	employee6: 600,employee7: 700,};
+// let tallage = 0.10;
+// for(let key in obj){
+//   let sum = ( obj[key] *tallage)
+//   console.log( sum + obj[key])
+// }
+//----зарплата увеличиться только для тех у кого она меньше 400
+// let obj = {	employee1: 100,	employee2: 200,	employee3: 300,	employee4: 400,	employee5: 500,	employee6: 600,employee7: 700,};
+// let tallage = 0.10;
+// for(let key in obj){
+//   if ( obj[key]<=400){
+//   let sum = ( obj[key] *tallage)
+//   console.log( sum + obj[key])
+// }}
+//-----мы записали ключ обьекта и ее значение в разные массивы---
+// let obj = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}; 
+// let arr =[] ;
+// let orr= [];
+// for ( let elem in obj ){
+//   arr.push(elem)
+//   orr.push( obj[elem])
+// }
+// console.log( arr)
+// console.log( orr )
+//----Мы тут записали в новый массив эелементы которого начинаются на 1 или 2
+// const obj = {	1: 125,	2: 225,	3: 128,	4: 356,	5: 145,	6: 281,	7: 452,};
+// const arr=[];    // новый пустой массив
+// for ( let elem in obj ){
+//     let values = String(obj[elem]) //метод стринг чтобы работал оператор сравнения
+//     //console.log( values +'!!') // это просто проверочные столбы
+//     if (values [0] =='1'||values [0]=='2' ){  // оператор сравнивает нулевой индекс равен ли он 1 или 2 
+//       arr.push(values)   // с помошью пуш перебрасываем в новый массив числа которые начинаются на 1 или 2
+//       // console.log(values)
+// }}
+// console.log( arr )   // вызываем уже заполненный массив арр 
+//----обьединили два массива в один обьект--
+// let arr1 = ['a', 'b', 'c', 'd', 'e'];
+// let arr2 = [1, 2, 3, 4, 5];
+// let obj={};
+// for (let i = 0; i <= 4; i++) {   
+// 	let key = arr2[i];
+// 	let value = arr1[i];
+// 	obj[key] = value;
+// }
+// console.log(obj)
+//-----здес тоже самое наоборот---
+// let arr1 = ['a', 'b', 'c', 'd', 'e'];
+// let arr2 = [1, 2, 3, 4, 5];
+// let obj={};
+// for (let i = 0; i <= 4; i++) {   
+// 	let key = arr1[i];
+// 	let value = arr2[i];   // мы тут изменили имена массвов изза этого ключом будут буквы а не как в предыдушем цифры
+// 	obj[key] = value;
+// }
+// console.log(obj)
+
+
+
+
+
 
 
 
