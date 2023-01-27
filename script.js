@@ -1904,6 +1904,221 @@
 //Стандартные методы--------------------------
 
 
+// console.log(Math.pow(2,10)) //--возвел в квадрат 3 в  10 степень
+// console.log(Math.sqrt(245)) //--нашли квадратный корень из 245
+//-----тут мы нашли корень кубов-3 из суммы его элементов
+// let arr = [4, 2, 5, 19, 13, 0, 10]
+// let sum=0;
+// for ( let ard of arr){ //--перебираем циклом
+//   sum +=ard**3 ;//---находим сумму и квадратный корень кубов его элемента
+//   console.log(ard)
+// }console.log(sum)
+
+// let nam=Math.sqrt( 587 )  //--нашли квадратный корень
+// console.log(Math.ceil(nam))  //---Округлили результат в большую сторону
+// console.log( Math.floor(nam))   //округлили результат в меньшуу сторону
+// let obj={      //--создали обьект ключами которые являются Floor  и  ceil и сами обьекты это результаты прощлых мантпуляций
+//   'floor':24,
+//   'ceil':25
+// }
+// console.log(obj.floor)  //Выводим обьекты по ключу
+
+// let nam=Math.sqrt( 587 )
+// console.log(Math.ceil(nam))
+// console.log( Math.floor(nam))
+// let obj={
+//   'floor':24,
+//   'ceil':25
+// }
+// console.log(obj.floor)
+
+// let arr = [];   // ---пустой массив
+// for ( i =0; i<10;i++){  // ---- цикл от1 д 10
+//   let a= Math.round(Math.random() * 100);   //---переманная а имеет рондомные числа от 1 до 100 с роуд мы округляем его к ближнему этот медот работаеть 10 раз также как и цикл.
+//   arr.push(a)    //---пушим в пустой массив
+// }console.log( arr)  //--- выводит 10 рандомных эл массива 
+// ----Метод toUpperCase----------
+// let str = 'Язык JavaScript';
+// console.log(str.toUpperCase());  //-- преобразует простую строку в большие заглавный буквы 
+//-------Метод toLowerCase----------
+// let str = 'Язык JAVASCRIPT';
+// console.log(str.toLowerCase());  //== преобразует строки в маленькие буквы
+//------ Метод Math.aabs-----------
+// console.log( Math.abs(-3,-4))  //отрицательный в положительный
+//----------Метод substr--------
+// let str = 'abcd';
+// let sub = str.substr(0,3);  //-- отрезает строку от его индекса
+// console.log(sub)
+//------
+// let str = 'abcde';
+// let sub = str.substr(-3, 2);
+// console.log(sub);
+
+// let arr = [];
+// for ( i =0; i<10;i++){
+//   let a= Math.round(Math.random() * 100);
+//   arr.push(a)
+// }console.log( arr)
+
+// let str = 'abcde';
+// let sub = str.substr(-3, 2);
+// console.log(sub);
+
+// let str ='abcd';
+// let sub= str.substring(1)
+// console.log( sub )
+
+// let str= 'я учу учу javascript';
+// console.log(str.indexOf('учу',5))
+
+// let str = 'Б..Б..Б';
+// console.log(str.lastIndexOf('Б', 5));
+
+// let tor = 'abcd';
+// console.log(tor.indexOf('c'))
+
+// var str = 'Быть или не быть, вот в чём вопрос.';
+// console.log(str.startsWith('Быть'));        // true
+// console.log(str.startsWith('не быть'));     // false
+// console.log(str.startsWith('не быть', 9));  // true
+
+// var str = 'Быть или не быть, вот в чём вопрос.';
+// console.log(str.endsWith('вопрос.'));   // true
+// console.log(str.endsWith('быть'));      // false
+// console.log(str.endsWith('быть', 16));  // true
+
+// let str = 'html-css-javascript';
+// let arr = str.split('-',2);
+// console.log(arr);
+
+// let str = 'abcd';
+// let arr =str.split('')
+// console.log(arr)
+
+// let str = '123456789';
+// let arr1 = str.split('');
+// let arr2 = arr1.reverse();  //--этот метод переворачивает элементы массива в обратном порядке 
+// let result = arr2.join('');  //--этот метод обратно сливает изменненный массив обратно 
+// console.log(result);
+
+// let str = '12345';
+// let arr = str.split('');
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) { 
+// 	sum += Number(arr[i]);  //--преобразуем эти числа-строки  в настояшие числа
+// }console.log(sum);
+
+// let num = 12345;
+// let str = String(num);  //--тут мы преобразовали числа в строки 
+// let arr = str.split('');  //--split - читает только строки - нудно заранее преобразовывать числа в стоки.
+// console.log(arr)
+
+// let num = '1-2-3-4-5';
+// let arr = num.split('-')
+// console.log(arr)
+
+// let arr = [1,2,3];
+// let str = arr.join('-');
+// console.log( str )
+
+// let arr = [1,2,3,4,5];
+// let arr1 = arr.join('-');
+// console.log(arr1)
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// arr.unshift('1', '2');  //--этот метот добавляет новые эл в начало массива
+// console.log(arr);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let elem = arr.shift();  //--это метод удаляет первый эл массива а результатом возврашает удаленный элемент
+// console.log(arr);  //--массив с удаленным эл
+// console.log(elem);  //--удаленный элемент из массива
+
+// let arr = ['1', '2', '3', '4', '5', '6']; 
+// let result = [];
+// while (arr.length > 0) { // массив уменьшается в цикле пока не достигнет нуля
+// 	let first = arr.shift();
+// 	let last  = arr.pop();
+	
+// 	let str = first + last; // тут будет 
+// 		строка '16', потом '25', потом '34' 
+// 	result.push(str);
+// }
+// // После цикла в result лежит массив 
+// 	['16', '25', '34']. Сольем его в строку: 
+// result = result.join('-');
+// console.log(result);
+
+// массив.slice(откуда отрезать, 
+// 	[докуда отрезать]) 
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let sub = arr.slice(0, 2);
+// console.log(sub);
+
+// массив.splice(откуда удаляем, сколько элементов удаляем, [вставить элемент], [вставить элемент]...);
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// arr.splice(2, 1, '1', '2', '3');
+// console.log(arr);
+
+// let arr = [ 1,2,3,4,5];
+// let result = arr.includes(3)  //это  метод проеыерять наличие жлемента в массиве
+// console.log(result)
+
+// let str = 'london';
+// let res = str.slice(0,-1) + str.slice(5,6).toUpperCase() ;
+// console.log(res)
+
+// let str = 'london';
+// let res =  str.slice(0,2).toUpperCase()+ str.slice(2);
+// console.log(res)
+
+// let str = 'word1 word2 word3';
+// // Разобьем строку в массив слов:
+// let words = str.split(' ');
+// for (let i = 0; i < words.length; i++) { 
+// 	// Увеличим регистр каждого слова:
+// 	words[i] = words[i].slice(0, 1).toUpperCase() + words[i].slice(1); 
+// }
+// // Сольем массив обратно в строку:
+// let result = words.join(' ');
+// console.log(result); // выведет 'Word1 Word2 Word3' 
+
+// let stor = 'var_test_text';
+// let words = stor.split('_');
+// for ( let i = 0; i < words.length; i++){
+//   words[i] = words[i].slice(0, 1).toUpperCase() + words[i].slice(1);
+// }
+// let res = words.join(' ');
+// console.log(res)
+
+// let str = '12345';
+// let result = str.split('').reverse().join('');
+// console.log(result);
+
+// let dor = 'dom slaer maza faka'
+// let res =dor.split('').reverse().join('');
+// console.log(res)
+
+// let num = 12345;
+// let arr = String(num).split('');
+// let sum = 0;
+// for (let digit of arr) {
+// 	sum += +digit;
+// }
+// console.log(sum);
+
+// let num = 12345;
+// let arr = String(num).split('');
+// let sum = 0;
+// for (let digit of arr) {
+// 	sum += Number(digit);
+// }
+// console.log(sum);
+
+// --ПОЛЬЗОВАТЕЛЬСКИЕ ФУНКЦИИ------------
+
+
+
 
 
 
